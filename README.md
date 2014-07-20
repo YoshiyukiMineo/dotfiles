@@ -1,0 +1,6 @@
+dotfiles
+========
+
+- .zshrc
+- .gitconfig
+- .gitignore

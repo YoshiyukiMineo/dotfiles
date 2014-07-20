@@ -1,0 +1,8 @@
+[user]
+	name = Plenluno
+	email = plenluno@zoho.com
+[ghq]
+	root = ~/dev/src
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = ~/.gitignore
