@@ -84,7 +84,10 @@ export GOPATH=~/dev
 export GOMAXPROCS=2
 export PATH=$PATH:$GOPATH/bin
 if [[ "$(uname)" = "Darwin" ]]; then
-  export PATH=$PATH:/usr/local/opt/go/libexec/bin
+  export GOROOT=/usr/local/opt/go/libexec
+  export PATH=$PATH:$GOROOT/bin
+  launchctl setenv GOROOT $GOROOT
+  launchctl setenv GOPATH $GOPATH
 else
   export PATH=$PATH:/usr/lib/go/bin
 fi
