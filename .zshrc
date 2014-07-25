@@ -109,9 +109,10 @@ export LESSCHARSET=utf-8
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # function
-## gor: go routine
-function gor() {
+## gort: go routine
+function gort() {
   gofmt -s -w ./
+  goimports -w ./
   golint ./
   go build
 }
