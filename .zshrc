@@ -79,6 +79,15 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# 
+# My settings
+#
+
+# alias
+if [[ "$(uname)" = "Darwin" ]]; then
+  alias f="open ."
+fi
+
 # golang
 export GOPATH=~/dev
 export GOMAXPROCS=2
