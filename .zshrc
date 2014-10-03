@@ -117,6 +117,13 @@ export LESSCHARSET=utf-8
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# pyenv
+export PYENV_ROOT="${HOME}/.pyenv"
+if [ -d "${PYENV_ROOT}" ]; then
+  export PATH=${PYENV_ROOT}/bin:$PATH
+  eval "$(pyenv init -)"
+fi
+
 # function
 ## gort: go routine
 function gort() {
