@@ -129,6 +129,8 @@ fi
 # google cloud sdk
 if [[ "$(uname)" = "Darwin" ]]; then
   export PATH=$PATH:/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin
+else
+  export PATH=$PATH:~/sdk/google-cloud-sdk/bin:~/sdk/go_appengine
 fi
 
 # function
