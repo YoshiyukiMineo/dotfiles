@@ -133,6 +133,9 @@ else
   export PATH=$PATH:~/sdk/google-cloud-sdk/bin:~/sdk/go_appengine
 fi
 
+# heroku toolbelt
+export PATH=/usr/local/heroku/bin:$PATH
+
 # function
 ## gort: go routine
 function gort() {
