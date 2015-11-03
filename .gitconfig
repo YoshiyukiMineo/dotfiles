@@ -6,6 +6,8 @@
 [core]
 	editor = vim -c \"set fenc=utf-8\"
 	excludesfile = ~/.gitignore
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
