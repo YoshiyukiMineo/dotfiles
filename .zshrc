@@ -101,11 +101,6 @@ else
   export PATH=$PATH:/usr/lib/go/bin
 fi
 
-# boot2docker
-if [[ "$(uname)" = "Darwin" ]]; then
-  $(boot2docker shellinit)
-fi
-
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
